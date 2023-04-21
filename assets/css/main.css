@@ -40,13 +40,13 @@ main {
   height: 30%;
   display: flex;
   align-items: center;
-  padding: 2rem;
+  padding: 3rem 3rem 1rem 3rem;
 }
 .date_input_section_elem {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  padding: 10px 20px;
+  padding: 20px 2% 2% 0;
   border: 1px solid transparent;
 }
 .date_input_section_elem label {
@@ -67,8 +67,41 @@ main {
   font-size: 1.2rem;
   font-family: poppins_bold;
   font-weight: 700;
+  outline: none;
+  cursor: pointer;
+}
+.date_input_section_elem input:focus {
+  border: 1px solid #864CFF;
 }
 .date_input_section_elem .message {
   font-family: poppins_regular_i;
   color: red;
+}
+
+#process_section {
+  border: 1px solid transparent;
+  height: 40px;
+  width: 100%;
+  display: flex;
+}
+#process_section_random_div {
+  height: 1px;
+  width: 75%;
+  background-color: lightgray;
+  margin: 15px 0px 0 40px;
+}
+#process_section_button {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  bottom: 30px;
+  border-radius: 80px;
+  background-color: #864CFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+#process_section_button:hover {
+  background-color: #141414;
 }/*# sourceMappingURL=main.css.map */
