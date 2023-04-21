@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel='stylesheet' href="./assets/css/main.css" >
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -16,12 +16,33 @@
   </style>
 </head>
 <body>
+    <main>
+      <!-- Date input segement-->
+      <section class="date_input_section"> 
+        <section class='date_input_section_elem'>
+          <label> DAY </label>
+          <input type='text' placeholder="DD" />
+          <p class='message'> </p>
 
-  Day
-  DD
+        </section>
+        <section class='date_input_section_elem'>
+          <label> MONTH </label>
+          <input type='text' placeholder="MM" />
+          <p class='message'> </p>
+        </section>
+        <section class='date_input_section_elem'>
+          <label> YEAR</label>
+          <input type='text' placeholder="YYYY" />
+          <p class='message'> </p>
+        </section>
+      </section>
 
-  Month
-  MM
+    </main>
+      Day
+      DD
+      
+      Month
+      MM
 
   Year
   YYYY

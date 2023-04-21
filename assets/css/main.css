@@ -1,6 +1,74 @@
-body {
+@font-face {
+  font-family: poppins_regular;
+  src: url(../fonts/Poppins-Regular.ttf);
+}
+@font-face {
+  font-family: poppins_bold;
+  src: url(../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: poppins_regular_i;
+  src: url(../fonts/Poppins-Italic.ttf);
+}
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  font-family: poppins_regular;
+  width: 100%;
+  height: 100vh;
   background-color: #F0F0F0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid red;
+}
+
+main {
+  background: #fff;
+  width: 700px;
+  height: 500px;
+  border-radius: 20px 20px 60px 20px;
+}
+
+.date_input_section {
+  border: 1px solid green;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  padding: 2rem;
+}
+.date_input_section_elem {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 10px 20px;
+  border: 1px solid red;
+}
+.date_input_section_elem label {
+  font-size: 0.7rem;
+  font-weight: 400;
+  font-family: poppins_bold;
+  color: #868686;
+  letter-spacing: 5px;
+}
+.date_input_section_elem input {
+  margin-top: 5px;
+  width: 120px;
+  height: 50px;
+  border: none;
+  border: 1px solid #ddd9d9;
+  border-radius: 5px;
+  padding: 1rem;
+  font-size: 1.2rem;
+  font-family: poppins_bold;
+  font-weight: 700;
+}
+.date_input_section_elem .message {
+  font-family: poppins_regular_i;
+  color: red;
 }/*# sourceMappingURL=main.css.map */
