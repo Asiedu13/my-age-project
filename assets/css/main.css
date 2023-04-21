@@ -75,6 +75,16 @@ main {
 }
 .date_input_section_elem .message {
   font-family: poppins_regular_i;
+  font-size: 0.7rem;
+  color: red;
+  position: relative;
+  padding: 1rem 0 0 0;
+  border: 1px solid transparent;
+}
+.date_input_section .input-error {
+  border: 1px solid red;
+}
+.date_input_section .text-error {
   color: red;
 }
 
