@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
+  <link rel='stylesheet' href="./assets/css/main.css" >
   
   <title>Frontend Mentor | Age calculator app</title>
 
@@ -16,16 +16,39 @@
   </style>
 </head>
 <body>
+    <main>
+      <!-- Date input segement-->
+      <section class="date_input_section"> 
+        <section class='date_input_section_elem'>
+          <label> DAY </label>
+          <input type='text' placeholder="DD" class='input_e' />
+          <p class='message'> </p>
 
-  Day
-  DD
+        </section>
+        <section class='date_input_section_elem'>
+          <label> MONTH </label>
+          <input type='text' placeholder="MM"  class='input_e'/>
+          <p class='message'> </p>
+        </section>
+        <section class='date_input_section_elem'>
+          <label> YEAR</label>
+          <input type='text' placeholder="YYYY" class='input_e'/>
+          <p class='message'> </p>
+        </section>
+      </section>
 
-  Month
-  MM
+      <!-- Processing stage -->
+      <section id='process_section'>
+        <div id='process_section_random_div'> </div>
+        <div id='process_section_button'> 
+          <svg xmlns="http://www.w3.org/2000/svg" width="46" height="44" viewBox="0 0 46 44"><g fill="none" stroke="#FFF" stroke-width="2"><path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44"/></g></svg>
+        </div> 
+      </section>
 
-  Year
-  YYYY
+     
 
+    </main>
+     
   -- years
   -- months
   -- days
@@ -34,5 +57,8 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Prince Kofi Asiedu</a>.
   </div>
+
+  <script src='./assets/js/main.js'> </script>
+  
 </body>
 </html>
