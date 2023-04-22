@@ -9,7 +9,6 @@ const launch = () => {
     let inputElements = document.querySelectorAll('.input_e')
     let messagePoints = document.querySelectorAll('.message')
  
-    console.log('clicked');
     let vals = getInputValues(inputElements);
     let if_null = if_empty(vals);
 
@@ -22,11 +21,8 @@ const launch = () => {
         goodDay = verifyDay(vals[0])
         goodMonth = verifyMonth(vals[1])
         goodYear = verifyYear(vals[2])
-        console.log('Good day')
-        console.log(goodDay)
 
         verifyValues(goodDay, goodMonth, goodYear);
-        // correct_display(if_null.retarr);
     }
 
 }
@@ -43,7 +39,6 @@ const getInputValues = (arr) => {
      arr.forEach(e => {
         values.push(e.value)
      })
-     console.log(values)
      return values;
 }
 
@@ -70,10 +65,8 @@ const verifyValues = (goodDay, goodMonth, goodYear) => {
    
 
     if (goodDay.length > 0 || goodMonth.length > 0 || goodYear.length > 0) {
-        console.log('error detected')
         err_display([goodDay, goodMonth, goodYear])
     }else {
-        console.log('No error yet')
         correct_display([goodDay, goodMonth, goodYear])
     }
 }
@@ -82,7 +75,6 @@ const verifyDay = (dayInput) => {
     let day = Number.parseInt(dayInput)
     if (Number.isInteger(day)) {
         if (day < 1 || day > 31 ) {
-            console.log('day error')
             retVal = 'Must be a valid day'
         }
     } else {
@@ -97,7 +89,6 @@ const verifyMonth = (monthInput) => {
     let month = Number.parseInt(monthInput)
     if (Number.isInteger(month)) {
         if (month < 1 || month > 12 ) {
-            console.log('Month error')
             retVal = 'Must be a valid month'
         }
     }else {
@@ -112,8 +103,7 @@ const verifyYear = (yearInput) => {
     let year = Number.parseInt(yearInput)
     if (Number.isInteger(year)) {
         if (year < 1900 || year > new Date().getFullYear() ) {
-            console.log('Year error');
-            retVal = 'Must be a valid Year'
+            retVal = 'Must be a valid year'
         }
     }else {
         retVal = ''
@@ -145,5 +135,3 @@ const correct_display = (arr) => {
         label.classList.remove('text-error')
     })
 }
-
-console.log(if_empty(['12', '10', '']))
