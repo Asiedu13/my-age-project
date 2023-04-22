@@ -10,6 +10,10 @@
   font-family: poppins_regular_i;
   src: url(../fonts/Poppins-Italic.ttf);
 }
+@font-face {
+  font-family: poppins_bold_italic;
+  src: url(../fonts/Poppins-BoldItalic.ttf);
+}
 * {
   margin: 0;
   padding: 0;
