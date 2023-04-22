@@ -8,21 +8,54 @@ const launch = () => {
     // Get elements
     let inputElements = document.querySelectorAll('.input_e')
     let messagePoints = document.querySelectorAll('.message')
- 
+    let shouldCompute = false;
     let vals = getInputValues(inputElements);
     let if_null = if_empty(vals);
 
     if (if_null.anyEmpty) {
         // create error messagePoints
-        err_display(if_null.retarr)
         // Place errors at deserving points
+        err_display(if_null.retarr)
     }else {
         // check for other errors
         goodDay = verifyDay(vals[0])
         goodMonth = verifyMonth(vals[1])
         goodYear = verifyYear(vals[2])
+        
+       let verifyAll = verifyValues(goodDay, goodMonth, goodYear);
+        shouldCompute = verifyAll;
+    }
 
-        verifyValues(goodDay, goodMonth, goodYear);
+    if (shouldCompute) {
+        // Find the years, month
+
+        let d1 = new Date(`${new Date().getFullYear()}-${new Date().getMonth()}-${new Date().getDate()}`);
+        let d2 = new Date(`${vals[2]}-${vals[1]}-${vals[0]}`)
+        let yearsLived = (d1.getTime() - d2.getTime()) ;
+        
+        function convertmili( mSeconds ){
+            var checkYear = Math.floor(mSeconds / 31536000000);
+            return checkYear;
+        }
+        yearsLived = convertmili(yearsLived)
+
+        // Getting months lived
+        let monthsLived = Math.abs((new Date().getMonth() + 1) - vals[1])
+
+        // Get days lived
+        let diffOfDays = Math.abs(new Date().getDate() - vals[0])
+        
+        let dayslived = 0
+        if (new Date().getDate() > vals[0] ) {
+            dayslived = new Date().getDate() - diffOfDays
+        }
+
+        // Edit html
+        const display_elem = document.querySelectorAll('.n')
+
+        display_elem[0].textContent = yearsLived;
+        display_elem[1].textContent = monthsLived;
+        display_elem[2].textContent = dayslived;
     }
 
 }
@@ -57,18 +90,21 @@ const if_empty = (arr) => {
         }
         retarr.push(temp)
     }
-    console.log(retarr);
     return {anyEmpty: any, retarr: retarr}
 
 }
 const verifyValues = (goodDay, goodMonth, goodYear) => {
    
-
+    let retVal = false;
     if (goodDay.length > 0 || goodMonth.length > 0 || goodYear.length > 0) {
         err_display([goodDay, goodMonth, goodYear])
     }else {
         correct_display([goodDay, goodMonth, goodYear])
+
+        retVal = true;
     }
+
+    return retVal;
 }
 const verifyDay = (dayInput) => {
     let retVal = ''
@@ -114,7 +150,6 @@ const verifyYear = (yearInput) => {
 
 const err_display = (arr) => {
     const errMessagePoints = document.querySelectorAll('.message');
-    console.log(errMessagePoints)
     for (let i = 0; i < errMessagePoints.length; i++) {
         errMessagePoints[i].textContent = arr[i]
     }
@@ -126,7 +161,6 @@ const err_display = (arr) => {
 
 const correct_display = (arr) => {
     const errMessagePoints = document.querySelectorAll('.message');
-    console.log(errMessagePoints)
     for (let i = 0; i < errMessagePoints.length; i++) {
         errMessagePoints[i].textContent = arr[i]
     }
