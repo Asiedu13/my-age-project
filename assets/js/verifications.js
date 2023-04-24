@@ -3,10 +3,8 @@ const verifyValues = (goodDay, goodMonth, goodYear) => {
    
     let retVal = false;
     if (goodDay.length > 0 || goodMonth.length > 0 || goodYear.length > 0) {
-        err_display([goodDay, goodMonth, goodYear])
+        retVal = false;
     }else {
-        correct_display([goodDay, goodMonth, goodYear])
-
         retVal = true;
     }
 

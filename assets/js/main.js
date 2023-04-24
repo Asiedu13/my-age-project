@@ -15,7 +15,7 @@ const launch = () => {
     if (if_null.anyEmpty) {
         // create error messagePoints
         // Place errors at deserving points
-        err_display(if_null.retarr)
+        err_display(if_null.retarr, messagePoints, labels)
     }else {
         // check for other errors
         goodDay = verifyDay(vals[0])
@@ -23,6 +23,11 @@ const launch = () => {
         goodYear = verifyYear(vals[2])
         
        let verifyAll = verifyValues(goodDay, goodMonth, goodYear);
+       if (verifyAll) {
+        correct_display([goodDay, goodMonth, goodYear], messagePoints, labels)
+       }else {
+        err_display([goodDay, goodMonth, goodYear], messagePoints, labels)
+       }
         shouldGetDaysLived = verifyAll;
     }
 
