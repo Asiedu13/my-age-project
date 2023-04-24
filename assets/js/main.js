@@ -34,7 +34,6 @@ const launch = () => {
         let differenceInDays = convertmili(yearsLivedInMillisecond);
 
         let yearsLived = yearsLivedCalc(differenceInDays)
-        console.log(yearsLived);
 
         let monthsLived = monthsLivedCalc(vals[1]);
     
@@ -52,7 +51,3 @@ const launch = () => {
 }
 
 launchBtn.addEventListener('click', launch)
-
-
-
-// ----------- Utility functions -----------------
