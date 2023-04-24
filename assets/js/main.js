@@ -36,17 +36,10 @@ const launch = () => {
         let yearsLived = yearsLivedCalc(differenceInDays)
         console.log(yearsLived);
 
-        // Getting months lived
-    
         let monthsLived = monthsLivedCalc(vals[1]);
     
-        // Get days lived
-        let diffOfDays = Math.abs(new Date().getDate() - vals[0])
+        let dayslived = daysLivedCalc(vals[0])
         
-        let dayslived = 0
-        if (new Date().getDate() > vals[0] ) {
-            dayslived =  diffOfDays
-        }
 
         // Edit html
         const display_elem = document.querySelectorAll('.n')
@@ -63,31 +56,3 @@ launchBtn.addEventListener('click', launch)
 
 
 // ----------- Utility functions -----------------
-
-
-const getInputValues = (arr) => {
-    let values = []
-     arr.forEach(e => {
-        values.push(e.value)
-     })
-     return values;
-}
-
-
-
-const if_empty = (arr) => {
-    let retarr = []
-    let temp = false
-    let any = false;
-    for(let i = 0; i < arr.length; i++) {
-        if (arr[i].length == 0 ) {
-           temp = 'The field is required'
-            any = true;
-        }else {
-            temp = ""
-        }
-        retarr.push(temp)
-    }
-    return {anyEmpty: any, retarr: retarr}
-
-}

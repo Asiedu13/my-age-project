@@ -29,10 +29,49 @@ function monthsLivedCalc(month) {
     return monthsLived;
 }
 
+function daysLivedCalc(day) {
+    let currentDay = new Date().getDate();
+    let daysLived = 0;
+    if (currentDay == day) {
+        daysLived = 0
+   }else if (day < currentDay) {
+       daysLived = currentDay;
+   }else {
+       daysLived = day - currentDay;
+   }
+   return daysLived;
+}
+
+// ------- Get input values
+
+const getInputValues = (arr) => {
+    let values = []
+     arr.forEach(e => {
+        values.push(e.value)
+     })
+     return values;
+}
 
 
 
 // ---- Value verification functions ---------
+
+const if_empty = (arr) => {
+    let retarr = []
+    let temp = false
+    let any = false;
+    for(let i = 0; i < arr.length; i++) {
+        if (arr[i].length == 0 ) {
+           temp = 'The field is required'
+            any = true;
+        }else {
+            temp = ""
+        }
+        retarr.push(temp)
+    }
+    return {anyEmpty: any, retarr: retarr}
+
+}
 
 const verifyValues = (goodDay, goodMonth, goodYear) => {
    
