@@ -1,13 +1,11 @@
 
 const verifyValues = (goodDay, goodMonth, goodYear) => {
-   
     let retVal = false;
     if (goodDay.length > 0 || goodMonth.length > 0 || goodYear.length > 0) {
         retVal = false;
     }else {
         retVal = true;
     }
-
     return retVal;
 }
 const verifyDay = (dayInput) => {

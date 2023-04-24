@@ -11,6 +11,3 @@ function animateValue(obj, start, end, duration) {
     window.requestAnimationFrame(step);
   }
   
-//   const obj = document.getElementById("value");
-//   animateValue(obj, 0, 18, 2000);
-  

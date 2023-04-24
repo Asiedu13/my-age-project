@@ -15,7 +15,7 @@ const launch = () => {
     if (if_null.anyEmpty) {
         // create error messagePoints
         // Place errors at deserving points
-        err_display(if_null.retarr, messagePoints, labels)
+        err_display(if_null.retarr, messagePoints, [labels, inputElements])
     }else {
         // check for other errors
         goodDay = verifyDay(vals[0])
@@ -24,9 +24,9 @@ const launch = () => {
         
        let verifyAll = verifyValues(goodDay, goodMonth, goodYear);
        if (verifyAll) {
-        correct_display([goodDay, goodMonth, goodYear], messagePoints, labels)
+        correct_display([goodDay, goodMonth, goodYear], messagePoints, [labels, inputElements])
        }else {
-        err_display([goodDay, goodMonth, goodYear], messagePoints, labels)
+        err_display([goodDay, goodMonth, goodYear], messagePoints, [labels, inputElements])
        }
         shouldGetDaysLived = verifyAll;
     }
@@ -48,13 +48,7 @@ const launch = () => {
 
         let daysLived = daysLivedCalc(vals[0])
         animateValue(display_elem[2], 0, daysLived, 1000)
-        
 
-       
-
-        // display_elem[0].textContent = yearsLived.wholeValue;
-        // display_elem[1].textContent = monthsLived;
-        // display_elem[2].textContent = daysLived;
     }
 
 }
