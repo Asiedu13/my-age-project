@@ -34,10 +34,8 @@ function daysLivedCalc(day) {
     let daysLived = 0;
     if (currentDay == day) {
         daysLived = 0
-   }else if (day < currentDay) {
-       daysLived = currentDay;
    }else {
-       daysLived = day - currentDay;
+       daysLived = Math.abs(day - currentDay);
    }
    return daysLived;
 }
