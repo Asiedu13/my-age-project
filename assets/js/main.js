@@ -33,24 +33,28 @@ const launch = () => {
 
     if (shouldGetDaysLived) {
         // Find the years, month
+         // Edit html
+         const display_elem = document.querySelectorAll('.n')
         let d1 = new Date(`${new Date().getFullYear()}-${new Date().getMonth() + 1}-${new Date().getDate()}`);
         let d2 = new Date(`${vals[2]}-${vals[1]}-${vals[0]}`)
         let yearsLivedInMillisecond = (d1.getTime() - d2.getTime()) ; // returns in mSeconds
         let differenceInDays = convertmili(yearsLivedInMillisecond);
 
         let yearsLived = yearsLivedCalc(differenceInDays)
+        animateValue(display_elem[0], 0, yearsLived.wholeValue, 500)
 
         let monthsLived = monthsLivedCalc(vals[1]);
-    
+        animateValue(display_elem[1], 0, monthsLived, 1000)
+
         let daysLived = daysLivedCalc(vals[0])
+        animateValue(display_elem[2], 0, daysLived, 1000)
         
 
-        // Edit html
-        const display_elem = document.querySelectorAll('.n')
+       
 
-        display_elem[0].textContent = yearsLived.wholeValue;
-        display_elem[1].textContent = monthsLived;
-        display_elem[2].textContent = daysLived;
+        // display_elem[0].textContent = yearsLived.wholeValue;
+        // display_elem[1].textContent = monthsLived;
+        // display_elem[2].textContent = daysLived;
     }
 
 }
