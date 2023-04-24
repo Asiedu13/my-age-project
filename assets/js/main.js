@@ -1,6 +1,6 @@
 
 const launchBtn = document.querySelector('#process_section_button');
-let labels = document.querySelectorAll('label');
+const labels = document.querySelectorAll('label');
 
 
 // Initiate launch
@@ -38,7 +38,7 @@ const launch = () => {
 
         let monthsLived = monthsLivedCalc(vals[1]);
     
-        let dayslived = daysLivedCalc(vals[0])
+        let daysLived = daysLivedCalc(vals[0])
         
 
         // Edit html
@@ -46,7 +46,7 @@ const launch = () => {
 
         display_elem[0].textContent = yearsLived.wholeValue;
         display_elem[1].textContent = monthsLived;
-        display_elem[2].textContent = dayslived;
+        display_elem[2].textContent = daysLived;
     }
 
 }
