@@ -1,6 +1,5 @@
 // ------ DaysLived Computation
 function convertmili( mSeconds ){
-    // var checkYear = Math.floor(mSeconds / 31536000000);
     var one_day=1000*60*60*24
     let days = Math.floor(mSeconds / one_day);
     return days;
