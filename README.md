@@ -53,10 +53,9 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Asiedu13/my-age](https://github.com/Asiedu13/my-age)
+- Live Site URL: [my-age-beta.vercel.app](https://my-age-beta.vercel.app/)
 
-## My process
 
 ### Built with
 
