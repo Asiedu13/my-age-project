@@ -1,6 +1,6 @@
 # Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -106,7 +106,7 @@ I would like to thank my roommates, Nana Kwame Oduro-Marfo and Mark Korankye for
 
 ## Got feedback for me?
 
-I love receiving feedback! I am always looking to improve.So if you have anything you'd like to mention, please email hi [prin
+I love receiving feedback! I am always looking to improve.So if you have anything you'd like to mention, please email hi[prin
 cekofasiedu@gmail.com] 
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
