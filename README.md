@@ -2,19 +2,14 @@
 
 ## Got feedback for me?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
-
+I love receiving feedback! I am always looking to improve my applications and platform. So if you have anything you'd like to mention, please email hi at[ princekofasiedu@gmail.com](mailto:princekofasiedu@gmail.com?subject=Feedback%20for%20MyAgeApp&body=Body-goes-here)
 
 
 ---------------------------------------------------------
 
 # Frontend Mentor - Age calculator app solution
 
-This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
 ## Table of contents
 
@@ -53,9 +48,9 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://my-age-beta.vercel.app/](https://my-age-beta.vercel.app/)
+- Solution URL: [Asiedu13/my-age](https://github.com/Asiedu13/my-age)
+- Live Site URL: [my-age-beta.vercel.app](https://my-age-beta.vercel.app/)
 
-## My process
 
 ### Built with
 
@@ -108,11 +103,13 @@ Moving forwards, I would focus on css grid and have a firm grip of the Javascrip
 
 ## Author
 
-- Website - [Prince Kofi Asiedu](https://asiedu13.github.io)
+- Website - [Prince Kofi Asiedu](https://prince-asiedu-asiedu13.vercel.app/)
 - Frontend Mentor - [@Asiedu13](https://www.frontendmentor.io/profile/Asiedu13)
 - Twitter - [@Prince_KAsiedu](https://www.twitter.com/Prince_KAsiedu)
+- LinkedIn - [Prince Asiedu](https://www.linkedin.com/in/princek-asiedu/)
 
+- Email - [ princekofasiedu@gmail.com](mailto:princekofasiedu@gmail.com?subject=Feedback%20for%20MyAgeApp&body=Body-goes-here)
 
 ## Acknowledgments
 
-I would like to thank my roommates, Nana Kwame Oduro-Marfo and Mark Korankye for their support during development of this project.
+I would like to thank my university roommates, Nana Kwame Oduro-Marfo and Mark Korankye for their support during development of this project.

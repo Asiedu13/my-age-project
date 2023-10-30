@@ -75,7 +75,7 @@ main {
   cursor: pointer;
 }
 .date_input_section_elem input:focus {
-  border: 1px solid #864CFF;
+  border: 1px solid #FFC107;
 }
 .date_input_section_elem .message {
   font-family: poppins_regular_i;
@@ -112,7 +112,7 @@ main {
   position: relative;
   bottom: 30px;
   border-radius: 80px;
-  background-color: #864CFF;
+  background-color: #FFC107;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -142,7 +142,7 @@ main {
     height: 80px;
     bottom: 30px;
     border-radius: 80px;
-    background-color: #864CFF;
+    background-color: #FFC107;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -163,7 +163,7 @@ main {
   padding: 0 20px;
 }
 #display_section .display_section_elem b {
-  color: #864CFF;
+  color: #FFC107;
 }
 
 @media only screen and (max-width: 700px) {
@@ -182,7 +182,7 @@ main {
     padding: 0 20px;
   }
   #display_section .display_section_elem b {
-    color: #864CFF;
+    color: #FFC107;
   }
 }
 @media only screen and (max-width: 700px) {
@@ -223,7 +223,7 @@ main {
     cursor: pointer;
   }
   .date_input_section_elem input:focus {
-    border: 1px solid #864CFF;
+    border: 1px solid #FFC107;
   }
   .date_input_section_elem .message {
     font-family: poppins_regular_i;
