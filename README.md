@@ -1,3 +1,12 @@
+# Frontend Mentor - Age calculator app
+
+## Got feedback for me?
+
+I love receiving feedback! I am always looking to improve my applications and platform. So if you have anything you'd like to mention, please email hi at[ princekofasiedu@gmail.com](princekofasiedu@gmail.com)
+
+
+---------------------------------------------------------
+
 # Frontend Mentor - Age calculator app solution
 
 This is a solution to the [Age calculator app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/age-calculator-app-dF9DFFpj-Q). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
@@ -94,13 +103,14 @@ Moving forwards, I would focus on css grid and have a firm grip of the Javascrip
 
 ## Author
 
-- Website - [Prince Kofi Asiedu](https://asiedu13.github.io)
+- Website - [Prince Kofi Asiedu](https://prince-asiedu-asiedu13.vercel.app/)
 - Frontend Mentor - [@Asiedu13](https://www.frontendmentor.io/profile/Asiedu13)
 - Twitter - [@Prince_KAsiedu](https://www.twitter.com/Prince_KAsiedu)
-
+- LinkedIn - [Prince Asiedu](https://www.linkedin.com/in/princek-asiedu/)
 
 ## Acknowledgments
 
+<<<<<<< HEAD
 I would like to thank my roommates, Nana Kwame Oduro-Marfo and Mark Korankye for their support during development of this project.
 
 
@@ -110,3 +120,6 @@ I love receiving feedback! I am always looking to improve.So if you have anythin
 cekofasiedu@gmail.com] 
 
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
+=======
+I would like to thank my university roommates, Nana Kwame Oduro-Marfo and Mark Korankye for their support during development of this project.
+>>>>>>> feature-project-readme
