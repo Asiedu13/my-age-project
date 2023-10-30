@@ -2,12 +2,7 @@
 
 ## Got feedback for me?
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
-
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
-
-**Have fun building!** 🚀
-
+I love receiving feedback! I am always looking to improve my applications and platform. So if you have anything you'd like to mention, please email hi at[ princekofasiedu@gmail.com](princekofasiedu@gmail.com)
 
 
 ---------------------------------------------------------
@@ -109,11 +104,11 @@ Moving forwards, I would focus on css grid and have a firm grip of the Javascrip
 
 ## Author
 
-- Website - [Prince Kofi Asiedu](https://asiedu13.github.io)
+- Website - [Prince Kofi Asiedu](https://prince-asiedu-asiedu13.vercel.app/)
 - Frontend Mentor - [@Asiedu13](https://www.frontendmentor.io/profile/Asiedu13)
 - Twitter - [@Prince_KAsiedu](https://www.twitter.com/Prince_KAsiedu)
-
+- LinkedIn - [Prince Asiedu](https://www.linkedin.com/in/princek-asiedu/)
 
 ## Acknowledgments
 
-I would like to thank my roommates, Nana Kwame Oduro-Marfo and Mark Korankye for their support during development of this project.
+I would like to thank my university roommates, Nana Kwame Oduro-Marfo and Mark Korankye for their support during development of this project.
